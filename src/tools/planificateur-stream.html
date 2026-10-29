@@ -1,0 +1,29 @@
+<div class="tool">
+  <div class="row">
+    <div><label for="name">Nom de la chaîne</label><input id="name" type="text" maxlength="40" value="Ma Chaîne"></div>
+    <div><label for="ptitle">Titre du planning</label><input id="ptitle" type="text" maxlength="40" value="Planning de la semaine"></div>
+    <div><label for="pal">Palette</label><select id="pal"><option value="violet">Violet / Cyan</option><option value="fire">Rose / Orange</option><option value="green">Vert / Bleu</option></select></div>
+  </div>
+  <div id="days" class="days"></div>
+  <div class="preview-box"><canvas id="cv" width="1280" height="720" aria-label="Aperçu du planning"></canvas></div>
+  <div class="actions">
+    <button type="button" id="dl">Télécharger l’image</button>
+    <button type="button" class="secondary" id="copy">Copier en texte</button>
+    <span class="status" id="status"></span>
+  </div>
+  <p class="note">Vos réglages sont mémorisés sur cet appareil.</p>
+</div>
+
+<section class="explain">
+  <h2>Un planning de stream à partager en image</h2>
+  <p>Annoncer ses horaires régulièrement aide votre communauté à prendre l’habitude de venir. Ce planificateur crée l’image de votre semaine de stream, prête à publier sur X, Discord, Instagram ou dans votre description Twitch.</p>
+  <p><strong>Comment faire :</strong> pour chaque jour, cochez « Live » si vous streamez, indiquez l’heure et le jeu ou le thème. L’aperçu se met à jour tout de suite. Choisissez une palette, puis téléchargez l’image en PNG (1280×720) ou copiez une version texte pour vos réseaux.</p>
+  <p>Vos réglages sont mémorisés dans votre navigateur : la semaine suivante, il suffit de modifier ce qui change. Rien n’est envoyé sur un serveur.</p>
+  <p>Complétez votre identité visuelle avec le <a href="/twitch/generateur-overlay/">générateur d’overlay</a>.</p>
+  <h3>À quelle fréquence publier son planning ?</h3>
+  <p>Une fois par semaine, toujours au même moment, par exemple le dimanche soir. La régularité compte plus que le nombre de lives.</p>
+  <h3>Quel fuseau horaire utiliser ?</h3>
+  <p>Indiquez l’heure de Paris et précisez-le dans votre publication si votre audience est internationale.</p>
+  <h3>Puis-je modifier le jeu pour chaque jour ?</h3>
+  <p>Oui, chaque jour a son propre champ libre : jeu, thème ou événement spécial.</p>
+</section>

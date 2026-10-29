@@ -1,0 +1,42 @@
+<div class="tool">
+  <div class="row">
+    <div><label for="file">Votre miniature <span class="hint">(reste sur votre appareil)</span></label><input id="file" type="file" accept="image/png,image/jpeg,image/webp"></div>
+    <div><label for="title">Titre de la vidéo</label><input id="title" type="text" maxlength="120" value="J’ai testé le jeu le plus difficile du monde"></div>
+  </div>
+  <div class="row">
+    <div><label for="channel">Nom de la chaîne</label><input id="channel" type="text" maxlength="40" value="Ma Chaîne"></div>
+    <div><label for="views">Vues et date</label><input id="views" type="text" maxlength="40" value="12 k vues · il y a 2 jours"></div>
+    <div><label for="theme">Thème YouTube</label><select id="theme"><option value="dark">Sombre</option><option value="light">Clair</option></select></div>
+  </div>
+  <p class="note" id="fileinfo">Aucune image : un exemple est affiché. Format conseillé : 1280×720 (16:9), moins de 2 Mo.</p>
+
+  <div class="yt" id="yt" data-theme="dark">
+    <div class="yt-col">
+      <div class="yt-label">PC · fil d’accueil</div>
+      <div class="yt-card" id="card-pc"></div>
+    </div>
+    <div class="yt-col">
+      <div class="yt-label">Mobile · fil d’accueil</div>
+      <div class="yt-phone"><div class="yt-card yt-mobile" id="card-mobile"></div></div>
+    </div>
+    <div class="yt-col">
+      <div class="yt-label">Suggestions (petite taille)</div>
+      <div class="yt-side" id="card-side"></div>
+    </div>
+  </div>
+  <p class="note">Rendu approximatif : l’interface de YouTube évolue régulièrement. Outil non affilié à YouTube.</p>
+</div>
+
+<section class="explain">
+  <h2>Tester sa miniature YouTube avant de publier</h2>
+  <p>La miniature et le titre décident si on clique sur votre vidéo. Ce test montre votre miniature comme elle apparaîtra dans le fil d’accueil, sur ordinateur, sur mobile et en suggestion, avec le titre, le nom de la chaîne et le nombre de vues.</p>
+  <p><strong>Comment l’utiliser :</strong> importez votre image, tapez le titre prévu et basculez entre le thème clair et sombre. Votre fichier n’est jamais envoyé : il est affiché uniquement dans votre navigateur.</p>
+  <p><strong>Ce qu’il faut vérifier :</strong> le texte est-il lisible en petit ? Le visage ou le sujet reste-t-il visible dans la version suggestion ? La durée affichée en bas à droite cache-t-elle un élément important ? Gardez cette zone libre.</p>
+  <p>Pour exporter votre vidéo au bon format, utilisez le <a href="/youtube/ratios-video/">convertisseur de ratios</a>.</p>
+  <h3>Quelle taille pour une miniature YouTube ?</h3>
+  <p>1280×720 pixels (ratio 16:9), au format JPG, PNG ou WebP, avec un poids inférieur à 2 Mo.</p>
+  <h3>Combien de caractères pour le titre ?</h3>
+  <p>Environ 60 caractères restent visibles. Vérifiez avec le <a href="/reseaux-sociaux/compteur-caracteres/">compteur de caractères</a>.</p>
+  <h3>Mon image est-elle envoyée sur un serveur ?</h3>
+  <p>Non. Tout reste dans votre navigateur et disparaît quand vous fermez la page.</p>
+</section>

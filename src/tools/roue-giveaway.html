@@ -1,0 +1,38 @@
+<div class="tool">
+  <div class="wheel-wrap">
+    <div class="wheel-box">
+      <div class="pointer" aria-hidden="true"></div>
+      <canvas id="wheel" width="500" height="500" role="img" aria-label="Roue de tirage au sort"></canvas>
+    </div>
+    <div>
+      <label for="names">Pseudos <span class="hint">(un par ligne)</span></label>
+      <textarea id="names">Pseudo1
+Pseudo2
+Pseudo3
+Pseudo4
+Pseudo5</textarea>
+      <p class="note" id="info"></p>
+      <label><input type="checkbox" id="remove"> Retirer le gagnant de la liste après le tirage</label>
+      <div class="actions"><button type="button" id="spin">Lancer la roue</button><button type="button" class="secondary" id="dedupe">Supprimer les doublons</button></div>
+      <div class="result" aria-live="polite">
+        <div class="note">Gagnant</div>
+        <div class="winner" id="winner">–</div>
+        <div class="actions"><button type="button" class="secondary" id="copy" disabled>Copier le gagnant</button><span class="status" id="status"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="explain">
+  <h2>Faire un tirage au sort équitable pour un giveaway</h2>
+  <p>Cette roue de tirage au sort choisit un gagnant au hasard parmi une liste de pseudos. Collez les participants de votre giveaway Twitch, YouTube ou Instagram, un par ligne, puis lancez la roue. Le gagnant est affiché et peut être copié en un clic.</p>
+  <p><strong>Le tirage est réellement aléatoire :</strong> le gagnant est choisi avec le générateur aléatoire sécurisé de votre navigateur avant l’animation. La roue ne fait que tourner pour arriver sur lui, personne ne peut influencer le résultat.</p>
+  <p><strong>Comment l’utiliser :</strong> 1) collez la liste de pseudos ; 2) utilisez « Supprimer les doublons » pour que chacun ait une seule chance ; 3) cochez « Retirer le gagnant » si vous tirez plusieurs gagnants à la suite ; 4) lancez la roue.</p>
+  <p>Pour un giveaway en direct, affichez un décompte avec le <a href="/twitch/minuteur-stream/">minuteur de stream</a> avant le tirage. Pensez aussi à rappeler le règlement de votre jeu concours et les règles de la plateforme.</p>
+  <h3>Combien de participants peut-on mettre ?</h3>
+  <p>Vous pouvez en saisir plusieurs centaines. Au-delà d’une soixantaine de noms, la roue n’affiche plus les pseudos pour rester lisible, mais le tirage fonctionne toujours.</p>
+  <h3>Mes données sont-elles envoyées quelque part ?</h3>
+  <p>Non. La liste reste dans votre navigateur, rien n’est envoyé ni enregistré.</p>
+  <h3>Puis-je prouver que le tirage est honnête ?</h3>
+  <p>Faites le tirage en direct ou en capture d’écran vidéo, en montrant la liste complète avant de lancer la roue.</p>
+</section>

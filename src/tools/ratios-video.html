@@ -1,0 +1,34 @@
+<div class="tool">
+  <h2 style="margin-top:0">Ma vidéo source</h2>
+  <div class="row">
+    <div><label for="w">Largeur (px)</label><input id="w" type="number" min="1" value="1920"></div>
+    <div><label for="h">Hauteur (px)</label><input id="h" type="number" min="1" value="1080"></div>
+  </div>
+  <div class="result">
+    <div class="note">Taille maximale sans bandes noires (recadrage centré) pour chaque format</div>
+    <div id="table" class="ratio-table" role="table" aria-label="Tailles par format"></div>
+  </div>
+  <div class="actions"><button type="button" id="copy">Copier le tableau</button><span class="status" id="status"></span></div>
+
+  <h2>Calcul rapide</h2>
+  <div class="row">
+    <div><label for="qr">Format</label><select id="qr"></select></div>
+    <div><label for="qw">Largeur</label><input id="qw" type="number" min="1" value="1080"></div>
+    <div><label for="qh">Hauteur</label><input id="qh" type="number" min="1" value="1920"></div>
+  </div>
+  <p class="note">Modifiez la largeur ou la hauteur : l’autre valeur se calcule automatiquement.</p>
+</div>
+
+<section class="explain">
+  <h2>Quel ratio pour YouTube, TikTok et Instagram ?</h2>
+  <p>Chaque plateforme a son format idéal. YouTube utilise surtout le <strong>16:9</strong> (1920×1080), TikTok, Instagram Reels et YouTube Shorts le <strong>9:16</strong> vertical (1080×1920), les publications Instagram classiques le <strong>1:1</strong> carré (1080×1080) ou le <strong>4:5</strong> (1080×1350).</p>
+  <p>Ce convertisseur prend la taille de votre vidéo d’origine et calcule, pour chaque format, la plus grande zone que vous pouvez conserver en recadrant, centrée, sans bandes noires. Vous saisissez ensuite ces dimensions dans votre logiciel de montage, par exemple en recadrage ou en séquence imbriquée.</p>
+  <p>Le calcul rapide sert quand vous connaissez une seule dimension : choisissez le format, tapez la largeur et la hauteur se calcule, ou l’inverse. Les dimensions sont arrondies à un nombre pair, car la plupart des codecs vidéo l’exigent.</p>
+  <p>Vous préparez aussi la miniature ? Testez-la avec l’<a href="/youtube/apercu-miniature/">aperçu de miniature YouTube</a>.</p>
+  <h3>Comment passer d’une vidéo 16:9 à du 9:16 ?</h3>
+  <p>Vous perdez beaucoup de largeur : une vidéo 1920×1080 donne une zone verticale de 606×1080. Recadrez sur le sujet principal ou placez la vidéo sur un fond flou dans un cadre 1080×1920.</p>
+  <h3>Pourquoi des nombres pairs ?</h3>
+  <p>Les formats vidéo courants (H.264) découpent l’image en blocs et demandent des dimensions paires. Un nombre impair peut provoquer une erreur d’export.</p>
+  <h3>Quelle résolution viser ?</h3>
+  <p>1080p suffit pour la plupart des créateurs. Les résolutions affichées ici sont des repères : vérifiez les recommandations officielles de chaque plateforme.</p>
+</section>

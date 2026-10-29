@@ -1,0 +1,44 @@
+<div class="tool">
+  <div class="row">
+    <div><label for="t1">Abonnés Tier 1</label><input id="t1" type="number" min="0" value="50"></div>
+    <div><label for="t2">Abonnés Tier 2</label><input id="t2" type="number" min="0" value="5"></div>
+    <div><label for="t3">Abonnés Tier 3</label><input id="t3" type="number" min="0" value="1"></div>
+  </div>
+  <div class="row">
+    <div><label for="bits">Bits reçus par mois</label><input id="bits" type="number" min="0" value="5000"></div>
+    <div><label for="viewers">Viewers moyens</label><input id="viewers" type="number" min="0" value="40"></div>
+    <div><label for="hours">Heures de live par mois</label><input id="hours" type="number" min="0" value="60"></div>
+  </div>
+  <div class="row">
+    <div><label for="share">Part du streamer sur les subs <span class="hint">(50 % standard, jusqu’à 70 %)</span></label>
+      <select id="share"><option value="0.5" selected>50 %</option><option value="0.6">60 %</option><option value="0.7">70 %</option></select></div>
+    <div><label for="adrpm">Pub : € pour 1 000 viewers-heures <span class="hint">(très variable)</span></label><input id="adrpm" type="number" min="0" step="0.1" value="2"></div>
+  </div>
+  <div class="result" aria-live="polite">
+    <div class="note">Revenu mensuel estimé</div>
+    <div class="big" id="total">0 €</div>
+    <dl>
+      <dt>Abonnements</dt><dd id="r-subs">0 €</dd>
+      <dt>Bits</dt><dd id="r-bits">0 €</dd>
+      <dt>Publicités</dt><dd id="r-ads">0 €</dd>
+      <dt>Estimation annuelle</dt><dd id="r-year">0 €</dd>
+    </dl>
+  </div>
+  <div class="actions"><button type="button" id="copy">Copier le résultat</button><span class="status" id="status"></span></div>
+  <p class="note">Estimation indicative avant impôts et commissions. Les montants réels dépendent de votre contrat Twitch.</p>
+</div>
+
+<section class="explain">
+  <h2>Comment estimer ses revenus Twitch ?</h2>
+  <p>Les revenus d’un streamer Twitch viennent de trois sources principales : les abonnements, les bits et la publicité. Ce calculateur vous donne une estimation mensuelle en additionnant ces trois sources, à partir de chiffres que vous connaissez déjà dans votre tableau de bord de créateur.</p>
+  <p><strong>Abonnements :</strong> un abonnement Tier 1 est facturé 4,99 € au spectateur, Tier 2 à 9,99 € et Tier 3 à 24,99 €. Le streamer touche en général 50 % de ce montant, et jusqu’à 70 % pour certains partenaires. Le calculateur applique la part que vous choisissez.</p>
+  <p><strong>Bits :</strong> chaque bit rapporte environ 0,01 € au streamer. Pour 5 000 bits, cela fait donc environ 50 €.</p>
+  <p><strong>Publicités :</strong> les revenus publicitaires dépendent du nombre de viewers, du temps de live et du pays de l’audience. Nous les estimons avec un montant pour 1 000 viewers-heures, que vous pouvez modifier.</p>
+  <p>Utilisez le résultat comme un ordre de grandeur pour fixer vos objectifs, pas comme une promesse. Pour comparer avec une autre plateforme, essayez aussi le <a href="/youtube/calculateur-revenus/">calculateur de revenus YouTube</a>.</p>
+  <h3>Combien gagne un petit streamer Twitch ?</h3>
+  <p>Avec une cinquantaine d’abonnés et une quarantaine de viewers, les revenus tournent souvent autour de quelques centaines d’euros par mois au maximum. Cela varie énormément selon la communauté.</p>
+  <h3>Les revenus sont-ils imposables ?</h3>
+  <p>Oui. En France, les revenus d’un streamer doivent être déclarés, souvent via le statut de micro-entrepreneur. Vérifiez les règles sur le site de l’URSSAF ou de service-public.fr.</p>
+  <h3>Pourquoi mon résultat réel est-il différent ?</h3>
+  <p>Twitch peut prélever des taxes, appliquer des taux de conversion différents ou modifier ses conditions. Ce calculateur n’est pas affilié à Twitch et fournit seulement une estimation.</p>
+</section>

@@ -1,0 +1,44 @@
+<div class="tool">
+  <div class="timer-label" id="label"></div>
+  <div class="timer-display" id="display" role="timer" aria-live="off">05:00</div>
+
+  <div class="tool-controls">
+    <div class="row">
+      <div><label for="min">Minutes</label><input id="min" type="number" min="0" max="999" value="5"></div>
+      <div><label for="sec">Secondes</label><input id="sec" type="number" min="0" max="59" value="0"></div>
+      <div><label for="text">Texte au-dessus <span class="hint">(ex. « Le live commence dans »)</span></label><input id="text" type="text" maxlength="60" value="Le live commence dans"></div>
+    </div>
+    <div class="row">
+      <div><label for="endtext">Texte à la fin</label><input id="endtext" type="text" maxlength="30" value="C’est parti !"></div>
+      <div><label for="fg">Couleur du texte</label><input id="fg" type="color" value="#ffffff"></div>
+      <div><label for="bgmode">Fond</label><select id="bgmode"><option value="transparent">Transparent (OBS)</option><option value="color">Couleur unie</option></select></div>
+      <div><label for="bg">Couleur du fond</label><input id="bg" type="color" value="#111111"></div>
+    </div>
+    <div class="actions">
+      <button type="button" id="start">Démarrer</button>
+      <button type="button" class="secondary" id="pause">Pause</button>
+      <button type="button" class="secondary" id="reset">Remettre à zéro</button>
+      <button type="button" class="secondary" id="full">Plein écran</button>
+    </div>
+
+    <h2>Utiliser dans OBS</h2>
+    <p>Copiez ce lien, puis dans OBS ajoutez une source <strong>Navigateur</strong> et collez-le dans le champ URL. Le compte à rebours démarre tout seul.</p>
+    <input id="obslink" type="text" readonly aria-label="Lien pour OBS">
+    <div class="actions"><button type="button" id="copylink">Copier le lien OBS</button><span class="status" id="status"></span></div>
+    <p class="note">Dans OBS, réglez la largeur sur 1920 et la hauteur sur 1080 pour un affichage plein cadre.</p>
+  </div>
+</div>
+
+<section class="explain">
+  <h2>Un compte à rebours pour votre stream</h2>
+  <p>Ce minuteur affiche un compte à rebours en grand, utilisable en plein écran ou directement dans OBS Studio, Streamlabs ou tout logiciel qui accepte une source navigateur. C’est pratique pour un écran d’attente avant le début d’un live, une pause, un défi chronométré ou un « je reviens dans 5 minutes ».</p>
+  <p><strong>Pour l’utiliser dans OBS :</strong> réglez la durée et le texte, choisissez un fond transparent, copiez le lien OBS, puis créez une source « Navigateur » et collez l’adresse. Le décompte démarre dès que la source s’affiche et reste lisible grâce à votre couleur de texte.</p>
+  <p><strong>Pour l’utiliser dans le navigateur :</strong> cliquez sur « Plein écran » pour afficher le décompte sur un second écran ou le partager par Discord.</p>
+  <p>Tout fonctionne dans votre navigateur, sans compte ni installation. Pour préparer l’ambiance de votre live, regardez aussi la <a href="/reseaux-sociaux/roue-giveaway/">roue de giveaway</a>.</p>
+  <h3>Le minuteur continue-t-il si je change de scène dans OBS ?</h3>
+  <p>Cela dépend de l’option « Arrêter la source quand elle n’est pas visible » dans OBS. Laissez-la décochée pour que le décompte continue en arrière-plan.</p>
+  <h3>Puis-je changer les couleurs ?</h3>
+  <p>Oui, choisissez la couleur du texte et du fond avant de copier le lien. Le fond transparent permet de superposer le décompte à votre scène.</p>
+  <h3>Faut-il garder la page ouverte ?</h3>
+  <p>Pour l’usage navigateur, oui. Dans OBS, la source navigateur s’en charge elle-même.</p>
+</section>

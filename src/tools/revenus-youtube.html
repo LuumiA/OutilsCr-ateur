@@ -1,0 +1,33 @@
+<div class="tool">
+  <div class="row">
+    <div><label for="views">Vues par mois</label><input id="views" type="number" min="0" value="50000"></div>
+    <div><label for="rpm">RPM <span class="hint">(€ pour 1 000 vues)</span></label><input id="rpm" type="number" min="0" step="0.1" value="1.5"></div>
+    <div><label for="videos">Vidéos par mois <span class="hint">(facultatif)</span></label><input id="videos" type="number" min="0" value="8"></div>
+  </div>
+  <div class="result" aria-live="polite">
+    <div class="note">Revenu mensuel estimé</div>
+    <div class="big" id="total">0 €</div>
+    <dl>
+      <dt>Fourchette (RPM −40 % / +40 %)</dt><dd id="range">0 €</dd>
+      <dt>Estimation annuelle</dt><dd id="year">0 €</dd>
+      <dt>Revenu moyen par vidéo</dt><dd id="pervideo">–</dd>
+      <dt>Revenu pour 1 000 vues</dt><dd id="per1000">0 €</dd>
+    </dl>
+  </div>
+  <div class="actions"><button type="button" id="copy">Copier le résultat</button><span class="status" id="status"></span></div>
+  <p class="note">Estimation indicative avant impôts. Le RPM réel varie selon le sujet, la saison et l’audience.</p>
+</div>
+
+<section class="explain">
+  <h2>Comment calculer ses revenus YouTube ?</h2>
+  <p>Les revenus YouTube dépendent surtout de deux chiffres : le nombre de vues et le RPM. Le RPM (« revenue per mille ») est ce que vous gagnez réellement pour 1 000 vues, après la part prélevée par YouTube. Vous le trouvez dans YouTube Studio, onglet Analytics, rubrique Revenus.</p>
+  <p>La formule est simple : <strong>vues ÷ 1 000 × RPM</strong>. Avec 50 000 vues par mois et un RPM de 1,50 €, on obtient environ 75 € par mois. Ce calculateur ajoute une fourchette basse et haute, parce que le RPM bouge beaucoup d’un mois à l’autre.</p>
+  <p>Ne confondez pas RPM et CPM. Le CPM est ce que paient les annonceurs, le RPM est ce qui revient au créateur. Le RPM est donc toujours plus bas.</p>
+  <p>Si vous êtes aussi sur Twitch, comparez avec le <a href="/twitch/calculateur-revenus/">calculateur de revenus Twitch</a>.</p>
+  <h3>Quel est un bon RPM sur YouTube ?</h3>
+  <p>En français, un RPM de 1 à 3 € est courant. Les thèmes finance, tech ou business ont souvent un RPM plus élevé que le gaming ou le divertissement.</p>
+  <h3>À partir de quand peut-on être payé ?</h3>
+  <p>Il faut rejoindre le Programme Partenaire YouTube, qui demande un nombre minimal d’abonnés et d’heures de visionnage. Consultez les conditions actuelles sur le site officiel de YouTube.</p>
+  <h3>Les Shorts rapportent-ils autant ?</h3>
+  <p>Non, le RPM des Shorts est en général bien plus bas que celui des vidéos longues. Utilisez un RPM séparé si vous voulez estimer les deux.</p>
+</section>

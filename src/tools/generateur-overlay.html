@@ -1,0 +1,32 @@
+<div class="tool">
+  <div class="row">
+    <div><label for="kind">Type</label><select id="kind"><option value="banner">Bandeau (pseudo, titre)</option><option value="alert">Alerte (nouveau follower, don…)</option></select></div>
+    <div><label for="shape">Forme</label><select id="shape"><option value="round">Arrondie</option><option value="cut">Angles coupés</option><option value="square">Carrée</option></select></div>
+  </div>
+  <div class="row">
+    <div><label for="t1">Texte principal</label><input id="t1" type="text" maxlength="40" value="MonPseudo"></div>
+    <div><label for="t2">Texte secondaire</label><input id="t2" type="text" maxlength="60" value="Streamer · Twitch"></div>
+    <div id="iconwrap"><label for="icon">Icône <span class="hint">(emoji)</span></label><input id="icon" type="text" maxlength="4" value="💜"></div>
+  </div>
+  <div class="row">
+    <div><label for="c1">Couleur 1</label><input id="c1" type="color" value="#8b5cf6"></div>
+    <div><label for="c2">Couleur 2</label><input id="c2" type="color" value="#22d3ee"></div>
+    <div><label for="ct">Couleur du texte</label><input id="ct" type="color" value="#ffffff"></div>
+  </div>
+  <div class="preview-box"><canvas id="cv" aria-label="Aperçu de l’overlay"></canvas></div>
+  <div class="actions"><button type="button" id="dl">Télécharger en PNG</button><span class="note">Fond transparent, prêt pour OBS (source « Image »).</span></div>
+</div>
+
+<section class="explain">
+  <h2>Créer un overlay de stream sans logiciel de graphisme</h2>
+  <p>Un overlay donne une image de marque à votre live : bandeau avec votre pseudo, titre de la scène, alerte de nouveau follower… Ce générateur crée ces éléments simples directement dans votre navigateur et les exporte en PNG transparent, que vous pouvez ajouter dans OBS Studio ou Streamlabs.</p>
+  <p><strong>Pour l’utiliser :</strong> choisissez le type (bandeau ou alerte), tapez vos textes, réglez les deux couleurs du dégradé et la forme, puis cliquez sur « Télécharger en PNG ». Dans OBS, ajoutez une source « Image » et sélectionnez le fichier. Vous pouvez le placer, le redimensionner et l’animer avec un filtre.</p>
+  <p>Pour des alertes réellement animées et déclenchées par vos followers, il faut un service dédié ; cet outil produit des visuels statiques que vous réutilisez à votre guise.</p>
+  <p>Besoin d’un écran d’attente ? Essayez le <a href="/twitch/minuteur-stream/">minuteur de stream</a>, ou partagez vos horaires avec le <a href="/twitch/planificateur-stream/">planning de stream</a>.</p>
+  <h3>Quelle taille a l’image exportée ?</h3>
+  <p>Le bandeau fait 1200×260 pixels et l’alerte 1000×360 pixels, des tailles confortables pour un stream en 1080p.</p>
+  <h3>Le fond est-il vraiment transparent ?</h3>
+  <p>Oui, seul le bandeau ou l’alerte est dessiné. L’aperçu affiche un damier pour le montrer.</p>
+  <h3>Puis-je utiliser les images pour mon stream ?</h3>
+  <p>Oui, les images que vous créez vous appartiennent. N’y ajoutez pas de logos de marques dont vous n’avez pas les droits.</p>
+</section>
